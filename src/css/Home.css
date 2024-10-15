@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+.main_text {
+  margin-top: 2.5rem;
+}
+
+.after_new {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #003459;
+}
+
+main {
+  display: grid;
+  justify-content: center;
+}
+
+.main_collect {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 34rem;
+}
+
+.main_button button,
+.main_buttons button {
+  padding: 0.625rem 1.25rem;
+  border-radius: 1.25rem;
+  border: 2px solid #003459;
+  background-color: transparent;
+  color: #003459;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.main_buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+.main_buttons button:last-child {
+  background-color: #003459;
+  color: white;
+}
+
+.main_banner {
+  width: 62.5rem;
+  margin-top: 6.25rem;
+  height: 23.625rem;
+  background-color: #003459;
+  border-radius: 1.25rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner_rect1,
+.banner_rect2 {
+  position: absolute;
+  border-radius: 99px;
+  transform: rotate(25deg);
+  z-index: 1;
+}
+
+.banner_rect1 {
+  width: 49.25rem;
+  height: 49.25rem;
+  right: 18.75rem;
+  top: 12.4375rem;
+  background: #002A48;
+}
+
+.banner_rect2 {
+  width: 48.8925rem;
+  height: 39.6875rem;
+  left: 29.54rem;
+  bottom: -12.5rem;
+  background: #FCEED5;
+}
+
+.banner_components {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 22.6875rem;
+  padding: 0 3.125rem;
+}
+
+.banner_image {
+  width: 45%;
+  position: relative;
+}
+
+.banner_image img {
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  top: 5.375rem;
+  z-index: 2;
+}
+
+.header_main_textes {
+  width: 57%;
+  text-align: end;
+  z-index: 3;
+}
+
+.main_textes_omf,
+.header_main_textes_first,
+.miniP {
+  text-align: end;
+  color: #002A48;
+}
+
+.main_textes_omf {
+  font-size: 2rem;
+  position: relative;
+  right: 3.35rem;
+}
+
+.header_main_textes_first {
+  font-size: 2.25rem;
+}
+
+.miniP {
+  font-size: 1.125rem;
+  width: 34.375rem;
+  margin-top: 2.5rem;
+  color: rgb(0, 0, 0);
+}
+
+.cards {
+  gap: 3.125rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.petCard {
+  background: #FDFDFD;
+  box-shadow: 0px 4px 28px -2px rgba(0, 0, 0, 0.08);
+  padding: 1rem;
+  font-family: inherit;
+}
+
+.petCard h3 {
+  width: 12.5rem;
+}
+
+.petCard img {
+  width: 14.375rem;
+}
+
+.main_buttons button:hover,
+.main_button button:hover {
+  background-color: #003459;
+  color: white;
+}
+
+.SellerContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.SellerContainer img {
+  width: 800px;
+  margin-top: 30p;
+}
+
+.downcollect {
+  margin-top: 100px;
+}
+
+.firstdowncollect {
+  margin-top: 150px;
+}
+
+.AdoptionBanner {
+  position: relative;
+  background: #FFB775;
+  border-radius: 20pxf;
+  width: 1000px;
+  overflow: hidden;
+  display: flex;
+  height: 378px;
+  margin-top: 120px;
+  align-items: center;
+}
+
+.AdoptionRect1,
+.AdoptionRect2 {
+  position: absolute;
+  width: 782.29px;
+  height: 635px;
+  background: #FCEED5;
+  border-radius: 99px;
+  transform: matrix(-0.9, 0.43, 0.43, 0.9, 0, 0);
+  z-index: 1;
+}
+
+.AdoptionRect1 {
+  top: -216px;
+  left: -403.67px;
+}
+
+.AdoptionRect2 {
+  top: 10rem;
+  left: 36rem;
+  opacity: 0.3;
+}
+
+.AdoptionTextes h1 {
+  z-index: 2;
+
+}
+
+.AdoptionOne {
+  width: 471px;
+  height: 54px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 54px;
+  text-transform: capitalize;
+  color: #003459;
+  z-index: 2;
+}
+
+.AdoptionP {
+  width: 206px;
+  height: 36px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #242B33;
+  z-index: 2;
+}
+
+.AdoptionButton button {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #002A48;
+  padding: 14px 28px 10px;
+  gap: 8px;
+  width: 167px;
+  height: 48px;
+  border: 2.5px solid #003459;
+  background: transparent;
+  border-radius: 57px;
+}
+
+.AdoptionButton {
+  display: flex;
+  z-index: 2;
+  gap: 20px;
+}
+
+.AdoptionButton button:first-child {
+  background-color: #002A48;
+  color: white;
+}
+
+.AdoptionTextes {
+  display: grid;
+  gap: -34px;
+  margin-left: 20px;
+  height: 239px;
+}
+
+.AdoptionsImages img {
+  z-index: 3;
+  position: relative;
+  right: 106px;
+  top: 2px;
+}
