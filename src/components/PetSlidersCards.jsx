@@ -3,6 +3,7 @@ import petSliderData from '../jsons/petslider.js';
 import '../css/PetSlider.css'
 
 const PetCard = ({ image, title, description, category }) => (
+    
     <div className="pet-card">
         <img src={image} alt={title} className="pet-image" />
         <div className="pet-content">

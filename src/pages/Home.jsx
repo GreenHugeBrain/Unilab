@@ -90,9 +90,17 @@ function App() {
             <img src={HandToHand} alt="HandToHand" />
           </div>
         </div>
+        <div className="main_collect slider_collect">
+          <div className="main_text">
+            <p className='new'>Whats new?</p>
+            <p className='after_new'>Take a look at some of our pets</p>
+          </div>
+          <div className="main_button">
+            <button>View </button>
+          </div>
+        </div>
         <PetsSlider />
         <p className="countdown-title">Big Summer Event</p>
-
         <CountDown />
       </main>
       <Footer />

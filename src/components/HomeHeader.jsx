@@ -1,8 +1,18 @@
-import Logo from '../assets/logo.svg'
-import MainImage from '../assets/dogandhuman.svg'
-import style from '../css/HomeHeader.module.css'
+import React, { useState } from 'react';
+import Logo from '../assets/logo.svg';
+import MainImage from '../assets/dogandhuman.svg';
+import style from '../css/HomeHeader.module.css';
+import translations from '../jsons/translations.js';
 
 const Header = () => {
+    const [language, setLanguage] = useState('en');
+
+    const handleLanguageChange = (event) => {
+        setLanguage(event.target.value);
+    };
+
+    const t = translations[language];
+
     return (
         <header>
             <div>
@@ -13,40 +23,40 @@ const Header = () => {
             </div>
             <nav>
                 <div>
-                    <img src={Logo} alt="" />
+                    <img src={Logo} alt="Logo" />
                 </div>
                 <ul>
-                    <li>Home</li>
-                    <li>Category</li>
-                    <li>Contact</li>
+                    <li>{t.home}</li>
+                    <li>{t.category}</li>
+                    <li>{t.contact}</li>
                 </ul>
                 <div className={style.buttons}>
-                    <button>Join the community</button>
-                    <select>
-                        <option>🇬🇪</option>
-                        <option>🇺🇸</option>
+                    <button>{t.joinCommunity}</button>
+                    <select onChange={handleLanguageChange}>
+                        <option value="en">🇺🇸</option>
+                        <option value="ka">🇬🇪</option>
                     </select>
                 </div>
             </nav>
 
             <div className={style.header_main}>
                 <div className={style.header_main_textes}>
-                    <h1>One More Friend</h1>
-                    <p className={style.header_main_textes_first}>Thousands More Fun!</p>
-                    <p className={style.miniP}>Having a pet means you have more joy, a new friend, a happy person who will always be with you to have fun. We have 200+ different pets that can meet your needs!</p>
+                    <h1>{t.oneMoreFriend}</h1>
+                    <p className={style.header_main_textes_first}>{t.thousandsMoreFun}</p>
+                    <p className={style.miniP}>{t.petInfo}</p>
                     <div className={style.main_buttons}>
-                        <button>View Intro <span class="material-symbols-outlined">
+                        <button>{t.viewIntro} <span className="material-symbols-outlined">
                             play_circle
                         </span></button>
-                        <button>Explore Now</button>
+                        <button>{t.exploreNow}</button>
                     </div>
                 </div>
                 <div className={style.header_main_images}>
-                    <img src={MainImage} alt="Logo" />
+                    <img src={MainImage} alt="Main" />
                 </div>
             </div>
         </header>
-    )
-}
+    );
+};
 
 export default Header;
