@@ -1,4 +1,4 @@
-header {
+.header {
     padding: 38px 1099px 38px 130px;
     height: 486px;
     background: linear-gradient(102.87deg, #FCEED5 6.43%, #FCEED5 78.33%, #FFE7BA 104.24%);
@@ -51,7 +51,7 @@ select {
     border: none;
 }
 
-h1 {
+.header_main_textes h1 {
     font-family: sans-serif;
     color: #003459;
     font-weight: bolder;
@@ -62,9 +62,15 @@ h1 {
 .header_main_textes_first {
     font-family: sans-serif;
     color: #003459;
+
     font-weight: bolder;
     font-size: 36px;
     width: 565px;
+}
+
+.header_main_textes{
+    bottom: 37px;
+    position: relative;
 }
 
 .miniP {
@@ -85,8 +91,7 @@ h1 {
 }
 
 .header_main_images img {
-    width: 100%;
-    max-width: 610px;
+    width: 610px;
     height: auto;
     object-fit: contain;
     overflow: hidden;
@@ -152,4 +157,67 @@ h1 {
     background-color: #003459;
     color: white;
     border: none;
+}
+
+@media screen and (max-width: 1200px){
+    .header_main{
+        width: 80vw;
+        position: relative;
+        top: 87px;
+    }
+
+    .header_main_images img{
+        width: 480px;
+    }
+}
+
+
+@media screen and (max-width: 1000px){
+    .header_main{
+        width: 83vw;
+        position: relative;
+        top: 117px;
+    }
+
+    .header_main_images img{
+        width: 442px;
+    }
+    nav{
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 925px){
+    .header_main_textes{
+        width: 500px;
+    }
+}
+
+
+
+@media screen and (max-width: 870px){
+    .header_main_textes{
+        width: 430px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .header_main {
+        width: 79vw;
+        position: relative;
+        top: 117px;
+    }
+    nav{
+        width: 76vw;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    #nav{
+        display: none;
+    }
+    nav {
+        width: 67vw;
+    }
 }

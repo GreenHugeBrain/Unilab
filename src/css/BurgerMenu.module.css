@@ -1,0 +1,39 @@
+/* BurgerMenu.module.css */
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.line {
+    width: 30px;
+    height: 4px;
+    background: #003459;
+    margin: 4px 0;
+}
+
+.menu {
+    position: absolute;
+    top: 50px; /* შეგიძლიათ შეცვალოთ საჭიროების შემთხვევაში */
+    right: 20px;
+    background-color: white;
+    border: 1px solid #003459;
+    z-index: 100;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 10px;
+}
+
+.menu li {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Media query to show burger menu */
+@media (max-width: 768px) {
+    .burger {
+        display: flex;
+    }
+}
