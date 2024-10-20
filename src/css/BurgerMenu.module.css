@@ -1,25 +1,24 @@
-/* BurgerMenu.module.css */
 .burger {
     display: none;
     flex-direction: column;
     cursor: pointer;
-    align-items: center; /* ხაზების გაწვდვა ცენტრში */
-    justify-content: center; /* ცენტრში ჯდომა */
-    margin: 0 auto; /* ცენტრში განლაგება */
+    align-items: center; 
+    justify-content: center; 
+    margin: 0 auto; 
 }
 
 .line {
     width: 4vw;
     height: 0.5vw;
     background: #003459;
-    margin: 0.5vw 0; /* 4px -> vw */
+    margin: 0.5vw 0; 
 }
 
 .menu {
     position: absolute;
-    top: 10%; /* სარკმლის სიმაღლის მიხედვით */
-    right: 50%; /* 50% მარჯვნივ */
-    transform: translateX(50%); /* მენიუს ცენტრში გადატანა */
+    top: 10%; 
+    right: 50%; 
+    transform: translateX(50%); 
     background-color: white;
     border: 1px solid #003459;
     border-radius: 20px;
@@ -29,19 +28,18 @@
 
 .menu ul {
     list-style: none;
-    padding: 2vw; /* 10px -> vw */
+    padding: 2vw; 
     display: flex;
-    flex-direction: column; /* ვერტიკალურად განლაგება */
-    align-items: center; /* ცენტრში განლაგება */
+    flex-direction: column;
+    align-items: center; 
 }
 
 .menu li {
-    padding: 2vw 5vw; /* px -> vw */
+    padding: 2vw 5vw;
     cursor: pointer;
-    text-align: center; /* ტექსტის ცენტრში გაწვდვა */
+    text-align: center; 
 }
 
-/* Media query to show burger menu */
 @media (max-width: 768px) {
     .burger {
         display: flex;
