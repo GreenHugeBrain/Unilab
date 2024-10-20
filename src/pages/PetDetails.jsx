@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import pets from '../jsons/category_pets.js'; // Adjust the path as necessary
+import pets from '../jsons/category_pets.js'; 
 import styles from '../css/PetDetails.module.css';
 import Header from '../components/Header.jsx';
 import Footer from '../components/Footer.jsx';

@@ -159,65 +159,156 @@ h1 {
     border: none;
 }
 
-@media screen and (max-width: 1200px){
-    .header_main{
+
+@media screen and (max-width: 1200px) {
+    .header_main {
         width: 80vw;
         position: relative;
         top: 87px;
     }
 
-    .header_main_images img{
+    .header_main_images img {
         width: 480px;
     }
 }
 
 
-@media screen and (max-width: 1000px){
-    .header_main{
+@media screen and (max-width: 1000px) {
+    .header_main {
         width: 83vw;
         position: relative;
         top: 117px;
     }
 
-    .header_main_images img{
+    .header_main_images img {
         width: 442px;
     }
-    nav{
+
+    nav {
         width: 90vw;
     }
 }
 
-@media screen and (max-width: 925px){
-    .header_main_textes{
+@media screen and (max-width: 925px) {
+    .header_main_textes {
         width: 500px;
     }
 }
 
 
 
-@media screen and (max-width: 870px){
-    .header_main_textes{
+@media screen and (max-width: 870px) {
+    .header_main_textes {
         width: 430px;
     }
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 800px) {
     .header_main {
         width: 79vw;
         position: relative;
         top: 117px;
     }
-    nav{
+
+    nav {
         width: 76vw;
     }
 }
 
 
-@media screen and (max-width: 768px){
-    #nav{
+@media screen and (max-width: 768px) {
+    #nav {
         display: none;
     }
+
+
     nav {
-        width: 67vw;
+        width: 61vw;
+        gap: 428px;
+    }
+
+    .header_main_textes {
+        width: 380px;
+    }
+
+    .header_main {
+        display: grid;
+        justify-content: center;
+        width: 64vw;
+    }
+
+    .header {
+        height: 773px;
+
+    }
+
+    .buttons {
+        display: none;
+    }
+
+    .rect1 {
+        left: 41%;
+        top: 67%;
+    }
+
+    .rect3 {
+        left: 23%;
+        top: 53%;
+    }
+    .miniP{
+        width: 60vw;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    nav{
+        gap: 290px;
+        width: 55vw;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    nav {
+        gap: 220px;
+        width: 49vw;
+        left: -10vw;
+    }
+
+    .header_main_textes h1{
+        font-size: 40px;
+    }
+    .header_main_images img{
+        right: 13%;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    nav{
+        left: -13vw;
+    }
+
+    .header_main_textes_first{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    nav{
+        gap: 40px;
+    }
+
+    .header_main_textes_first{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 361px) {
+    .header_main_textes h1{
+        font-size: 35px;
+    }
+
+    .header_main_textes_first{
+        font-size: 25px;
     }
 }

@@ -25,7 +25,8 @@ body {
 
 main {
   display: grid;
-  justify-content: center;
+  justify-items: center;
+  width: 100vw;
 }
 
 .main_collect {
@@ -294,6 +295,76 @@ main {
   top: 2px;
 }
 
-.slider_collect{
+.slider_collect {
   margin-top: 50px;
+}
+
+@media screen and (max-width: 1100px) {
+  .main_collect {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22rem;
+  }
+
+  .main_banner {
+    width: 54.5rem;
+  }
+
+  .main_textes_omf {
+    right: 7.35rem;
+  }
+
+  .banner_rect2 {
+    left: 24.54rem;
+  }
+
+  .miniP {
+    width: 28.375rem;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .main_banner {
+    width: 54.5rem;
+    position: relative;
+    right: 1%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .main_banner {
+    width: 54.5rem;
+    position: relative;
+    right: 42px;
+  }
+
+}
+
+@media screen and (max-width: 860px) {
+  .main_collect {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+  }
+  .main_banner {
+    width: 93vw;
+    position: relative;
+    right: 10vw;
+    left: -11vw;
+}
+}
+
+@media screen and (max-width: 670px) {
+  .main_collect {
+    gap: 5px;
+    display: grid;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .after_new {
+    width: 52vw;
+  }
 }

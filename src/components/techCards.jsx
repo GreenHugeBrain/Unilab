@@ -1,4 +1,3 @@
-// src/components/ToyCard.jsx
 import { useState } from 'react';
 import pets from '../jsons/techs.js';
 import style from '../css/ToyCard.module.css'

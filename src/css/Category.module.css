@@ -196,11 +196,11 @@
 }
 
 .pagination button:hover {
-  background-color: #0056b3; /* Change color on hover */
+  background-color: #0056b3;
 }
 
 .activePage {
-  background-color: #0056b3; /* Different background for active page */
+  background-color: #0056b3; 
   font-weight: bold;
 }
 

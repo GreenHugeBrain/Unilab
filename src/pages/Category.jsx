@@ -38,11 +38,9 @@ const Category = () => {
         maxPrice: Infinity,
     });
 
-    // Pagination state
     const [currentPage, setCurrentPage] = useState(1);
-    const petsPerPage = 6; // Number of pets per page
+    const petsPerPage = 6; 
 
-    // Filter logic
     const applyFilters = () => {
         let newFilteredPets = petsData.filter(pet => {
             const matchGender = filters.gender.length === 0 || filters.gender.includes(pet.gender.toLowerCase());
@@ -56,7 +54,6 @@ const Category = () => {
         setFilteredPets(newFilteredPets);
     };
 
-    // Update filters
     const updateFilter = (type, value) => {
         setFilters(prevFilters => ({
             ...prevFilters,
@@ -72,20 +69,16 @@ const Category = () => {
         }));
     };
 
-    // Apply filters whenever filters change
     useEffect(() => {
         applyFilters();
     }, [filters]);
 
-    // Get current pets based on pagination
     const indexOfLastPet = currentPage * petsPerPage;
     const indexOfFirstPet = indexOfLastPet - petsPerPage;
     const currentPets = filteredPets.slice(indexOfFirstPet, indexOfLastPet);
 
-    // Change page
     const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
-    // Calculate total pages
     const totalPages = Math.ceil(filteredPets.length / petsPerPage);
 
     return (

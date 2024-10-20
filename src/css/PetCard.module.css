@@ -35,3 +35,39 @@
     font-weight: bold;
 }
 
+@media screen and (max-width: 1110px) {
+    .cards{
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        padding: 63px;
+    }
+
+    .petCard{
+        width: 244px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cards{
+        gap: 67px;
+        position: relative;
+        left: 44%;
+        width: 100PX;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .cards{
+        gap: 9px;
+        position: relative;
+        grid-template-columns: repeat(1, 1fr);
+        left: 43%;
+        width: 100PX;
+    }
+}

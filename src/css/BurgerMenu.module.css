@@ -3,32 +3,42 @@
     display: none;
     flex-direction: column;
     cursor: pointer;
+    align-items: center; /* ხაზების გაწვდვა ცენტრში */
+    justify-content: center; /* ცენტრში ჯდომა */
+    margin: 0 auto; /* ცენტრში განლაგება */
 }
 
 .line {
-    width: 30px;
-    height: 4px;
+    width: 4vw;
+    height: 0.5vw;
     background: #003459;
-    margin: 4px 0;
+    margin: 0.5vw 0; /* 4px -> vw */
 }
 
 .menu {
     position: absolute;
-    top: 50px; /* შეგიძლიათ შეცვალოთ საჭიროების შემთხვევაში */
-    right: 20px;
+    top: 10%; /* სარკმლის სიმაღლის მიხედვით */
+    right: 50%; /* 50% მარჯვნივ */
+    transform: translateX(50%); /* მენიუს ცენტრში გადატანა */
     background-color: white;
     border: 1px solid #003459;
+    border-radius: 20px;
     z-index: 100;
+    width: 38vw;
 }
 
 .menu ul {
     list-style: none;
-    padding: 10px;
+    padding: 2vw; /* 10px -> vw */
+    display: flex;
+    flex-direction: column; /* ვერტიკალურად განლაგება */
+    align-items: center; /* ცენტრში განლაგება */
 }
 
 .menu li {
-    padding: 10px 20px;
+    padding: 2vw 5vw; /* px -> vw */
     cursor: pointer;
+    text-align: center; /* ტექსტის ცენტრში გაწვდვა */
 }
 
 /* Media query to show burger menu */
